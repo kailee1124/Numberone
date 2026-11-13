@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///C:/Users/TKU/Downloads/transaction_dashboard_charts.html -->
+<html lang="zh-Hant"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24個月門市交易歷史數據與趨勢儀表板</title>
+    <!-- Tailwind CSS -->
+    <script src="./24個月門市交易歷史數據與趨勢儀表板_files/saved_resource"></script>
+    <!-- Chart.js for visualizations -->
+    <script src="./24個月門市交易歷史數據與趨勢儀表板_files/chart.js.下載"></script>
+    <!-- Inter Font -->
+    <link href="./24個月門市交易歷史數據與趨勢儀表板_files/css2" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.relative{position:relative}.sticky{position:sticky}.top-0{top:0px}.z-30{z-index:30}.mx-auto{margin-left:auto;margin-right:auto}.mb-4{margin-bottom:1rem}.mr-1\.5{margin-right:0.375rem}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-auto{margin-top:auto}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-16{height:4rem}.h-2{height:0.5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.min-h-\[300px\]{min-height:300px}.min-h-\[350px\]{min-height:350px}.min-h-screen{min-height:100vh}.w-2{width:0.5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-full{width:100%}.min-w-full{min-width:100%}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-200 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(226 232 240 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-slate-100\/70{background-color:rgb(241 245 249 / 0.7)}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-50\/50{background-color:rgb(248 250 252 / 0.5)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-8{padding-top:2rem;padding-bottom:2rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-wider{letter-spacing:0.05em}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-slate-50\/60:hover{background-color:rgb(248 250 252 / 0.6)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:justify-between{justify-content:space-between}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 1024px){.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-indigo-600 text-white p-2 rounded-xl shadow-md">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-slate-900">24個月門市交易歷史與趨勢分析</h1>
+                    <p class="text-xs text-slate-500">基於 2024-05 至 2026-04 完整營運數據</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+                    <span class="w-2 h-2 mr-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                    24個月完整週期
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        <!-- KPI Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Total 24M Net Revenue -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">24個月累計淨營收</p>
+                    <span class="p-2 bg-indigo-50 text-indigo-600 rounded-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </span>
+                </div>
+                <h3 class="text-3xl font-extrabold text-slate-900 mt-4" id="kpi-total-revenue">NT$ 1,383,300</h3>
+                <p class="text-xs text-slate-500 mt-2">涵蓋 24 個月清理後淨額</p>
+            </div>
+
+            <!-- Monthly Average Revenue -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">月平均淨營收</p>
+                    <span class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    </span>
+                </div>
+                <h3 class="text-3xl font-extrabold text-slate-900 mt-4" id="kpi-avg-revenue">NT$ 57,638</h3>
+                <p class="text-xs text-slate-500 mt-2">過去 24 個月平均表現</p>
+            </div>
+
+            <!-- Peak Month Revenue -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">單月最高營收</p>
+                    <span class="p-2 bg-emerald-50 text-emerald-600 rounded-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </span>
+                </div>
+                <h3 class="text-3xl font-extrabold text-emerald-600 mt-4" id="kpi-peak-revenue">NT$ 78,200</h3>
+                <p class="text-xs text-slate-500 mt-2" id="kpi-peak-month">月份: 2025-12</p>
+            </div>
+
+            <!-- Total Transaction Count -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">累計有效交易數</p>
+                    <span class="p-2 bg-amber-50 text-amber-600 rounded-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z"></path></svg>
+                    </span>
+                </div>
+                <h3 class="text-3xl font-extrabold text-slate-900 mt-4" id="kpi-total-transactions">909 筆</h3>
+                <p class="text-xs text-slate-500 mt-2">24個月內總交易筆數</p>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- 24-Month Trend Line Chart -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col lg:col-span-2">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="text-base font-bold text-slate-900">24個月營收走勢圖 (2024-05 ~ 2026-04)</h2>
+                        <p class="text-xs text-slate-500">展示兩年間門市淨營收之季節性與長期波動趨勢</p>
+                    </div>
+                    <span class="text-xs px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full font-medium">長期趨勢</span>
+                </div>
+                <div class="relative flex-1 min-h-[350px] flex items-center justify-center">
+                    <canvas id="monthlyTrendChart" width="1166" height="350" style="display: block; box-sizing: border-box; height: 350px; width: 1166px;"></canvas>
+                </div>
+            </div>
+
+            <!-- Regional Share Bar Chart -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="text-base font-bold text-slate-900">各區域總營收對比</h2>
+                        <p class="text-xs text-slate-500">北部、中部、南部、東部 24個月累計</p>
+                    </div>
+                </div>
+                <div class="relative flex-1 min-h-[300px] flex items-center justify-center">
+                    <canvas id="regionRevenueChart" width="542" height="300" style="display: block; box-sizing: border-box; height: 300px; width: 542px;"></canvas>
+                </div>
+            </div>
+
+            <!-- Status Distribution Doughnut Chart -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="text-base font-bold text-slate-900">交易狀態分佈比例</h2>
+                        <p class="text-xs text-slate-500">SALE / REFUND / CANCELLED 占比</p>
+                    </div>
+                </div>
+                <div class="relative flex-1 min-h-[300px] flex items-center justify-center">
+                    <canvas id="statusDoughnutChart" width="542" height="300" style="display: block; box-sizing: border-box; height: 300px; width: 542px;"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Data Table Section -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+            <div class="px-6 py-5 border-b border-slate-200 bg-slate-50/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                    <h2 class="text-base font-bold text-slate-900">24個月各月份營運彙總明細</h2>
+                    <p class="text-xs text-slate-500 mt-0.5">依月份統計淨營收、有效交易筆數與退款金額</p>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                    <thead class="bg-slate-100/70 text-slate-600 font-semibold text-xs uppercase tracking-wider">
+                        <tr>
+                            <th class="px-6 py-3.5">月份 (YYYY-MM)</th>
+                            <th class="px-6 py-3.5 text-right">淨營收 (NT$)</th>
+                            <th class="px-6 py-3.5 text-right">交易筆數</th>
+                            <th class="px-6 py-3.5 text-right">退款金額 (NT$)</th>
+                            <th class="px-6 py-3.5">主要銷售區域</th>
+                        </tr>
+                    </thead>
+                    <tbody id="monthly-table-body" class="divide-y divide-slate-200 bg-white text-slate-700">
+                        <!-- Populated by JavaScript -->
+                    <tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2026-04</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 64,500</td>
+                <td class="px-6 py-4 text-right">43 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,000</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2026-03</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 60,900</td>
+                <td class="px-6 py-4 text-right">40 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -900</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2026-02</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 52,300</td>
+                <td class="px-6 py-4 text-right">34 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -700</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">中部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2026-01</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 71,400</td>
+                <td class="px-6 py-4 text-right">47 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,600</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">南部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-12</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 78,200</td>
+                <td class="px-6 py-4 text-right">52 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -2,500</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-11</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 67,500</td>
+                <td class="px-6 py-4 text-right">44 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -800</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-10</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 63,200</td>
+                <td class="px-6 py-4 text-right">41 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,100</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">東部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-09</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 57,800</td>
+                <td class="px-6 py-4 text-right">38 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -500</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-08</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 61,500</td>
+                <td class="px-6 py-4 text-right">40 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -900</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">中部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-07</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 64,100</td>
+                <td class="px-6 py-4 text-right">42 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,400</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-06</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 59,400</td>
+                <td class="px-6 py-4 text-right">39 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,200</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">南部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-05</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 56,200</td>
+                <td class="px-6 py-4 text-right">37 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,000</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-04</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 53,600</td>
+                <td class="px-6 py-4 text-right">36 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -700</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">東部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-03</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 50,800</td>
+                <td class="px-6 py-4 text-right">33 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -800</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-02</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 44,200</td>
+                <td class="px-6 py-4 text-right">29 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -600</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">中部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2025-01</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 62,100</td>
+                <td class="px-6 py-4 text-right">41 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,300</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">南部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2024-12</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 68,900</td>
+                <td class="px-6 py-4 text-right">45 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -2,000</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2024-11</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 55,400</td>
+                <td class="px-6 py-4 text-right">38 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,100</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2024-10</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 51,200</td>
+                <td class="px-6 py-4 text-right">34 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -900</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">東部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2024-09</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 46,500</td>
+                <td class="px-6 py-4 text-right">30 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -400</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2024-08</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 49,800</td>
+                <td class="px-6 py-4 text-right">31 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,500</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">中部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2024-07</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 53,100</td>
+                <td class="px-6 py-4 text-right">35 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -500</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">南部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2024-06</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 48,200</td>
+                <td class="px-6 py-4 text-right">32 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -1,200</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr><tr class="hover:bg-slate-50/60 transition-colors">
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">2024-05</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ 42,500</td>
+                <td class="px-6 py-4 text-right">28 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ -800</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">北部</span></td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-auto py-4 text-center text-xs text-slate-500">
+        <p>虛構門市 24個月歷史交易儀表板 • 數據視覺化分析</p>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Generated 24-Month Mock Dataset (2024-05 to 2026-04)
+        const monthlyDataList = [
+            { month: "2024-05", revenue: 42500, count: 28, refund: -800, topRegion: "北部" },
+            { month: "2024-06", revenue: 48200, count: 32, refund: -1200, topRegion: "北部" },
+            { month: "2024-07", revenue: 53100, count: 35, refund: -500, topRegion: "南部" },
+            { month: "2024-08", revenue: 49800, count: 31, refund: -1500, topRegion: "中部" },
+            { month: "2024-09", revenue: 46500, count: 30, refund: -400, topRegion: "北部" },
+            { month: "2024-10", revenue: 51200, count: 34, refund: -900, topRegion: "東部" },
+            { month: "2024-11", revenue: 55400, count: 38, refund: -1100, topRegion: "北部" },
+            { month: "2024-12", revenue: 68900, count: 45, refund: -2000, topRegion: "北部" },
+            { month: "2025-01", revenue: 62100, count: 41, refund: -1300, topRegion: "南部" },
+            { month: "2025-02", revenue: 44200, count: 29, refund: -600, topRegion: "中部" },
+            { month: "2025-03", revenue: 50800, count: 33, refund: -800, topRegion: "北部" },
+            { month: "2025-04", revenue: 53600, count: 36, refund: -700, topRegion: "東部" },
+            { month: "2025-05", revenue: 56200, count: 37, refund: -1000, topRegion: "北部" },
+            { month: "2025-06", revenue: 59400, count: 39, refund: -1200, topRegion: "南部" },
+            { month: "2025-07", revenue: 64100, count: 42, refund: -1400, topRegion: "北部" },
+            { month: "2025-08", revenue: 61500, count: 40, refund: -900, topRegion: "中部" },
+            { month: "2025-09", revenue: 57800, count: 38, refund: -500, topRegion: "北部" },
+            { month: "2025-10", revenue: 63200, count: 41, refund: -1100, topRegion: "東部" },
+            { month: "2025-11", revenue: 67500, count: 44, refund: -800, topRegion: "北部" },
+            { month: "2025-12", revenue: 78200, count: 52, refund: -2500, topRegion: "北部" },
+            { month: "2026-01", revenue: 71400, count: 47, refund: -1600, topRegion: "南部" },
+            { month: "2026-02", revenue: 52300, count: 34, refund: -700, topRegion: "中部" },
+            { month: "2026-03", revenue: 60900, count: 40, refund: -900, topRegion: "北部" },
+            { month: "2026-04", revenue: 64500, count: 43, refund: -1000, topRegion: "北部" }
+        ];
+
+        // Calculate KPIs
+        let totalRevenue = 0;
+        let totalTransactions = 0;
+        let peakRevenue = 0;
+        let peakMonth = "";
+
+        monthlyDataList.forEach(item => {
+            totalRevenue += item.revenue;
+            totalTransactions += item.count;
+            if (item.revenue > peakRevenue) {
+                peakRevenue = item.revenue;
+                peakMonth = item.month;
+            }
+        });
+
+        const avgRevenue = Math.round(totalRevenue / monthlyDataList.length);
+
+        // Populate KPIs
+        document.getElementById('kpi-total-revenue').innerText = `NT$ ${totalRevenue.toLocaleString()}`;
+        document.getElementById('kpi-avg-revenue').innerText = `NT$ ${avgRevenue.toLocaleString()}`;
+        document.getElementById('kpi-peak-revenue').innerText = `NT$ ${peakRevenue.toLocaleString()}`;
+        document.getElementById('kpi-peak-month').innerText = `月份: ${peakMonth}`;
+        document.getElementById('kpi-total-transactions').innerText = `${totalTransactions} 筆`;
+
+        // Populate Table
+        const tbody = document.getElementById('monthly-table-body');
+        monthlyDataList.slice().reverse().forEach(item => {
+            const tr = document.createElement('tr');
+            tr.className = "hover:bg-slate-50/60 transition-colors";
+            tr.innerHTML = `
+                <td class="px-6 py-4 font-mono font-medium text-slate-900">${item.month}</td>
+                <td class="px-6 py-4 text-right font-semibold text-slate-900">NT$ ${item.revenue.toLocaleString()}</td>
+                <td class="px-6 py-4 text-right">${item.count} 筆</td>
+                <td class="px-6 py-4 text-right text-amber-600">NT$ ${item.refund.toLocaleString()}</td>
+                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">${item.topRegion}</span></td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        // Initialize Charts on Window Load
+        window.onload = function() {
+            // 1. Monthly Trend Line Chart
+            const trendCtx = document.getElementById('monthlyTrendChart').getContext('2d');
+            const months = monthlyDataList.map(i => i.month);
+            const revenues = monthlyDataList.map(i => i.revenue);
+
+            new Chart(trendCtx, {
+                type: 'line',
+                data: {
+                    labels: months,
+                    datasets: [{
+                        label: '淨營收 (NT$)',
+                        data: revenues,
+                        borderColor: '#6366f1',
+                        backgroundColor: 'rgba(99, 102, 241, 0.08)',
+                        borderWidth: 3,
+                        pointBackgroundColor: '#6366f1',
+                        pointRadius: 4,
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            grid: { color: '#f1f5f9' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { maxTicksLimit: 12 }
+                        }
+                    }
+                }
+            });
+
+            // 2. Regional Revenue Bar Chart
+            const regionCtx = document.getElementById('regionRevenueChart').getContext('2d');
+            new Chart(regionCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['北部', '中部', '南部', '東部'],
+                    datasets: [{
+                        label: '累計營收 (NT$)',
+                        data: [540000, 310000, 380000, 220000],
+                        backgroundColor: ['#6366f1', '#3b82f6', '#0ea5e9', '#14b8a6'],
+                        borderRadius: 8,
+                        borderSkipped: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: '#f1f5f9' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+
+            // 3. Status Doughnut Chart
+            const statusCtx = document.getElementById('statusDoughnutChart').getContext('2d');
+            new Chart(statusCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['正常銷售 (SALE)', '退款 (REFUND)', '已取消 (CANCELLED)'],
+                    datasets: [{
+                        data: [88, 8, 4],
+                        backgroundColor: ['#6366f1', '#f59e0b', '#ef4444'],
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { boxWidth: 12, font: { size: 12 } }
+                        }
+                    },
+                    cutout: '65%'
+                }
+            });
+        };
+    </script>
+
+</body></html>
